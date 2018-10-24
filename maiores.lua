@@ -1,13 +1,19 @@
--- Considere uma tabela que representa uma sequência de
--- números inteiros, como, por exemplo:
--- t = {1, 5, -2, 20, 0}
--- Escreva uma função maiores em Lua que receba uma sequência
--- de números inteiros e um valor inteiro, e retorne uma tabela
--- onde cada elemento é uma tabela do tipo “record” contendo o
--- índice e o valor dos elementos da sequência recebida cujo valor
--- seja maior que o segundo parâmetro.
--- ➔ cada elemento da tabela retornada deve ter como chaves as
--- strings : “indice” e “valor”
+-- License GPLv3
+-- Copyright 2018 Luiz Torro
+-- Author: luiz.torro@gmail.com
+
+--[[
+Considere uma tabela que representa uma sequência de
+números inteiros, como, por exemplo:
+  t = {1, 5, -2, 20, 0}
+Escreva uma função maiores em Lua que receba uma sequência
+de números inteiros e um valor inteiro, e retorne uma tabela
+onde cada elemento é uma tabela do tipo “record” contendo o
+índice e o valor dos elementos da sequência recebida cujo valor
+seja maior que o segundo parâmetro.
+➔ cada elemento da tabela retornada deve ter como chaves as
+strings : “indice” e “valor”
+]]
 
 function maiores(t, v)
 	local ret = {}
